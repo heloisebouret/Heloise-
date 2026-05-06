@@ -1,0 +1,154 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Work+Sans:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  --color-surface-container: #f5ece5;
+  --color-surface-dim: #e1d8d2;
+  --color-error-container: #ffdad6;
+  --color-tertiary-fixed-dim: #c8c6c3;
+  --color-surface-tint: #9e3d56;
+  --color-primary-fixed-dim: #ffb1c0;
+  --color-on-secondary-fixed: #281719;
+  --color-on-error: #ffffff;
+  --color-tertiary-fixed: #e4e2de;
+  --color-secondary: #70585b;
+  --color-surface-bright: #fff8f4;
+  --color-secondary-fixed-dim: #debfc2;
+  --color-on-surface-variant: #554245;
+  --color-surface-container-highest: #eae1da;
+  --color-on-primary-fixed: #3f0016;
+  --color-on-tertiary-container: #9a9a96;
+  --color-surface-container-high: #f0e7df;
+  --color-tertiary: #1c1d1b;
+  --color-on-background: #1f1b17;
+  --color-on-tertiary-fixed: #1b1c1a;
+  --color-on-secondary-container: #755d5f;
+  --color-on-primary-fixed-variant: #80253f;
+  --color-on-tertiary: #ffffff;
+  --color-on-primary: #ffffff;
+  --color-surface-container-low: #fbf2eb;
+  --color-on-surface: #1f1b17;
+  --color-inverse-primary: #ffb1c0;
+  --color-primary-container: #630d2a;
+  --color-primary-fixed: #ffd9de;
+  --color-secondary-fixed: #fbdbde;
+  --color-inverse-surface: #34302b;
+  --color-on-error-container: #93000a;
+  --color-outline: #887275;
+  --color-outline-variant: #dbc0c3;
+  --color-on-secondary: #ffffff;
+  --color-primary: #410017;
+  --color-on-secondary-fixed-variant: #574144;
+  --color-on-tertiary-fixed-variant: #474744;
+  --color-surface-variant: #eae1da;
+  --color-inverse-on-surface: #f8efe8;
+  --color-tertiary-container: #31322f;
+  --color-background: #fff8f4;
+  --color-error: #ba1a1a;
+  --color-surface: #fff8f4;
+  --color-secondary-container: #f8d8db;
+  --color-on-primary-container: #e7768f;
+  --color-surface-container-lowest: #ffffff;
+
+  --font-headline-md: "Newsreader", serif;
+  --font-body-lg: "Work Sans", sans-serif;
+  --font-body-md: "Work Sans", sans-serif;
+  --font-display: "Newsreader", serif;
+  --font-label-caps: "Work Sans", sans-serif;
+  --font-headline-lg: "Newsreader", serif;
+
+  --spacing-gutter: 32px;
+  --spacing-container-max: 1200px;
+  --spacing-section-padding: 120px;
+  --spacing-stack-md: 32px;
+  --spacing-stack-sm: 16px;
+
+  --radius-DEFAULT: 0.125rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 0.75rem;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-body-md overflow-x-hidden;
+  }
+
+  .paper-border {
+    border: 1px solid #dbc0c3;
+  }
+
+  .ambient-shadow {
+    box-shadow: 0 10px 40px -15px rgba(65, 0, 23, 0.08);
+  }
+}
+
+@utility font-headline-md {
+  font-family: var(--font-headline-md);
+  font-size: 32px;
+  line-height: 1.3;
+  font-weight: 400;
+}
+
+@utility font-body-lg {
+  font-family: var(--font-body-lg);
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+@utility font-body-md {
+  font-family: var(--font-body-md);
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+@utility font-display {
+  font-family: var(--font-display);
+  font-size: 64px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  font-weight: 300;
+}
+
+@utility font-label-caps {
+  font-family: var(--font-label-caps);
+  font-size: 12px;
+  line-height: 1.0;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+@utility font-headline-lg {
+  font-family: var(--font-headline-lg);
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+@utility text-display {
+  @apply font-display;
+}
+
+@utility text-headline-lg {
+  @apply font-headline-lg;
+}
+
+@utility text-headline-md {
+  @apply font-headline-md;
+}
+
+@utility text-body-lg {
+  @apply font-body-lg;
+}
+
+@utility text-body-md {
+  @apply font-body-md;
+}
+
+@utility text-label-caps {
+  @apply font-label-caps;
+}
